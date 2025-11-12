@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trisha Moni Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Trisha Moni Service</h1>
+    <nav>
+      <a href="#notice">নোটিশ বোর্ড</a>
+      <a href="#products">প্রোডাক্ট</a>
+      <a href="#categories">ক্যাটাগরি</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#contact">যোগাযোগ</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+
+  <section id="notice">
+    <h2>নোটিশ বোর্ড</h2>
+    <div id="noticeList"></div>
+  </section>
+
+  <section id="products">
+    <h2>প্রোডাক্ট পোস্ট</h2>
+    <div id="productList"></div>
+  </section>
+
+  <section id="categories">
+    <h2>ক্যাটাগরি</h2>
+    <div class="categories">
+      <div class="cat">
+        <h3>🎥 Video Service</h3>
+        <p>সব ধরনের ভিডিও সার্ভিস এখানে পাবেন।</p>
+      </div>
+      <div class="cat">
+        <h3>🏠 Room Service</h3>
+        <p>নির্ভরযোগ্য রুম সার্ভিস অর্ডার করতে পারেন।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>এই পেজ সম্পর্কে</h2>
+    <p>
+      Trisha Moni Service হলো একটি বিশ্বস্ত সার্ভিস প্ল্যাটফর্ম যেখানে আপনি
+      ১০০% গ্যারান্টি সহকারে নির্ভরযোগ্য সার্ভিস নিতে পারবেন।
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <p><strong>Email:</strong> rupadash278@gmail.com</p>
+    <p><strong>Phone:</strong> +8801765010687</p>
+  </section>
+
+  <section id="admin">
+    <h2>Admin Panel</h2>
+    <div id="loginForm">
+      <input type="password" id="adminPass" placeholder="Admin Password দিন">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="adminPanel" class="hidden">
+      <h3>নতুন নোটিশ যোগ করুন</h3>
+      <input type="text" id="newNotice" placeholder="নতুন নোটিশ লিখুন">
+      <button onclick="addNotice()">Add Notice</button>
+
+      <h3>নতুন প্রোডাক্ট পোস্ট করুন</h3>
+      <input type="text" id="productTitle" placeholder="প্রোডাক্ট টাইটেল">
+      <input type="text" id="productImg" placeholder="প্রোডাক্ট ইমেজ লিংক">
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Trisha Moni Service | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
